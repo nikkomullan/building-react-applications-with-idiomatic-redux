@@ -9,7 +9,7 @@ import App from './components/App'
 const persistedState = {
   todos: [
     {
-      id: 0,
+      id: '111618a0-5d65-4c5b-9837-074e8661e3cf',
       text: 'Welcome back',
       completed: false,
     },
