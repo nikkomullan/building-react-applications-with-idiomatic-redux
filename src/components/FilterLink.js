@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 const FilterLink = ({ filter, children }) => (
   <Link
-    to={filter === 'all' ? '' : filter}
+    to={filter === 'all' ? '/' : filter}
     activeStyle={{
       textDecoration: 'none',
       color: 'black',
@@ -15,7 +15,7 @@ const FilterLink = ({ filter, children }) => (
 
 FilterLink.propTypes = {
   filter: PropTypes.string,
-  children: PropTypes.any,
+  children: PropTypes.string,
 }
 
 export default FilterLink
