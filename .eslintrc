@@ -2,7 +2,8 @@
   "extends": "airbnb",
   "rules": {
     "semi": 0,
-    "no-console": "off"
+    "no-console": "off",
+    "quotes": "off"
   },
   "parserOptions": {
     "ecmaFeatures": {
