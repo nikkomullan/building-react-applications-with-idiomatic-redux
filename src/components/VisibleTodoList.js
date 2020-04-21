@@ -38,12 +38,6 @@ const mapStateToProps = (state, { params }) => {
   }
 }
 
-// const mapDispatchToProps = (dispatch) => ({
-//   onTodoClick(id) {
-//     dispatch(toggleTodo(id))
-//   },
-// })
-
 VisibleTodoList = withRouter(
   connect(mapStateToProps, { onTodoClick: toggleTodo })(VisibleTodoList)
 )
