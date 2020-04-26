@@ -1,12 +1,6 @@
 import { createStore } from 'redux'
+import promise from 'redux-promise'
 import todoApp from './reducers'
-
-const promise = store => next => action => {
-  if (typeof action.then === 'function') {
-    return action.then(next)
-  }
-  return next(action)
-}
 
 const logger = store => next => {
   if (!console.group) {
