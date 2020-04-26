@@ -1,22 +1,7 @@
 import { createStore } from 'redux'
 import promise from 'redux-promise'
+import logger from 'redux-logger'
 import todoApp from './reducers'
-
-const logger = store => next => {
-  if (!console.group) {
-    return next
-  }
-
-  return action => {
-    console.group(action.type)
-    console.log('%c prev state', 'color: gray', store.getState())
-    console.log('%c action', 'color: blue', action.type)
-    const returnValue = next(action)
-    console.log('%c next state', 'color: green', store.getState())
-    console.groupEnd(action.type)
-    return returnValue
-  }
-}
 
 const wrapDispatchWithMiddlewares = (store, middlewares) => {
   middlewares
