@@ -3,7 +3,9 @@
   "rules": {
     "semi": 0,
     "no-console": "off",
-    "quotes": "off"
+    "quotes": "off",
+    "arrow-body-style": "off",
+    "no-confusing-arrow": "off"
   },
   "parserOptions": {
     "ecmaFeatures": {
