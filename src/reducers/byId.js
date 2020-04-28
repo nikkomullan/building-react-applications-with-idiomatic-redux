@@ -1,3 +1,4 @@
+// ************ Reducers ************
 const byId = (state = {}, action) => {
   switch (action.type) {
     case 'RECEIVE_TODOS': {
@@ -14,4 +15,5 @@ const byId = (state = {}, action) => {
 
 export default byId
 
+// ************ Selectors ************
 export const getTodo = (state, id) => state[id]
