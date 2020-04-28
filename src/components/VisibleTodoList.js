@@ -17,8 +17,7 @@ class VisibleTodoList extends Component {
   }
 
   fetchData() {
-    const { filter, fetchTodos, requestTodos } = this.props
-    requestTodos(filter)
+    const { filter, fetchTodos } = this.props
     fetchTodos(filter)
   }
 
@@ -33,7 +32,6 @@ class VisibleTodoList extends Component {
 
 VisibleTodoList.propTypes = {
   filter: PropTypes.string,
-  requestTodos: PropTypes.func,
   fetchTodos: PropTypes.func,
   toggleTodo: PropTypes.func,
   isFetching: PropTypes.bool,
